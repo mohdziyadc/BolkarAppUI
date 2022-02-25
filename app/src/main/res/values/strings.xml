@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BolkarAppUI</string>
+    <string name="people">people</string>
+    <string name="content_description_favorite">image</string>
+</resources>
