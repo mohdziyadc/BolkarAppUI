@@ -47,11 +47,11 @@ class SpeakerAdapter() :
             binding.speakerName.text = currentSpeaker.n.split(" ")[0]
 
             if (currentSpeaker.mod) {
-                binding.speakerType.text = "Host"
+                binding.speakerType.text = itemView.context.getString(R.string.host)
                 binding.speakerBadge.visibility = View.VISIBLE
 
             } else {
-                binding.speakerType.text = "Speaker"
+                binding.speakerType.text = itemView.context.getString(R.string.speaker)
                 binding.speakerBadge.visibility = View.GONE
             }
             if(currentSpeaker.mic){
@@ -62,32 +62,13 @@ class SpeakerAdapter() :
             if (currentSpeaker.socketid != ""){
                 binding.particpantProfile.borderColor = ContextCompat.getColor(itemView.context,R.color.blue)
                 binding.speakerBadge.visibility = View.VISIBLE
-                binding.speakerType.text = "Host"
+                binding.speakerType.text = itemView.context.getString(R.string.host)
             }
 
 
         }
     }
 
-//    inner class HostViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-//        private val binding = ItemHostBinding.bind(itemView)
-//
-//        fun bind() {
-//            val host = mData?.host
-//            if(host != null){
-//                binding.hostName.text = host.n.split(" ")[0]
-//                Glide.with(itemView)
-//                    .load("http://cdn1.bolkarapp.com/uploads/dp/${host.u}.jpg")
-//                    .into(binding.hostProfile)
-//            }
-//
-//
-//
-//
-//
-//
-//        }
-//    }
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {

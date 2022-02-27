@@ -6,14 +6,14 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import com.example.bolkarappui.models.*
-import com.example.bolkarappui.repository.BolkarRespository
+import com.example.bolkarappui.repository.BolkarRepository
 import kotlinx.coroutines.launch
 import retrofit2.HttpException
 import java.io.IOException
 
 class BolkarViewModel(application: Application) : AndroidViewModel(application) {
 
-    private val repository = BolkarRespository()
+    private val repository = BolkarRepository()
 
     val speakersList = MutableLiveData<MutableList<Speaker>>()
     val membersList = MutableLiveData<List<Member>>()

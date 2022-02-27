@@ -11,7 +11,7 @@ import com.bumptech.glide.Glide
 import com.example.bolkarappui.R
 import com.example.bolkarappui.databinding.ItemUserBinding
 import com.example.bolkarappui.models.Member
-import com.example.bolkarappui.models.Speaker
+
 
 class MemberAdapter:RecyclerView.Adapter<MemberAdapter.MemberViewHolder>() {
 

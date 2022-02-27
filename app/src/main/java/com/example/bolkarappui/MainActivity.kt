@@ -1,5 +1,6 @@
 package com.example.bolkarappui
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
@@ -20,6 +21,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var memberAdapter: MemberAdapter
 
 
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -52,7 +54,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setupToolbar(list: MutableList<Speaker>) {
-        binding.peopleNo.text = (list.size - 1).toString()
+        binding.peopleNo.text = (list.size).toString()
         val url = Uri.parse("https://cdn1.bolkarapp.com/uploads/dp/${list[0].u}.jpg")
         Glide.with(this)
             .load(url)

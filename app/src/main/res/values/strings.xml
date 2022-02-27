@@ -2,4 +2,18 @@
     <string name="app_name">BolkarAppUI</string>
     <string name="people">people</string>
     <string name="content_description_favorite">image</string>
+    <string name="bolkar_app">#Bolkar App</string>
+    <string name="peopleNum">0</string>
+    <string name="other_users">Other Users</string>
+    <string name="leave">Leave</string>
+    <string name="invite">Invite</string>
+    <string name="mic">mic</string>
+    <string name="earth">earth</string>
+    <string name="backbutton">backButton</string>
+    <string name="name">Ziyad</string>
+    <string name="type">Host</string>
+    <string name="badge">badge</string>
+    <string name="name_member">Binsha</string>
+    <string name="host">Host</string>
+    <string name="speaker">Speaker</string>
 </resources>
